@@ -50,7 +50,7 @@ public class BookServiceImpl implements BookService {
 		book.setThumbnail(bookUpdateRequest.getThumbnail());
 		book.setDescription(bookUpdateRequest.getDescription());
 		book.setAuthor(bookUpdateRequest.getAuthor());
-		book.setUpdatedate(new Date());
+		/*book.setUpdateDate(new Date());*/
 		bookRepository.save(book);
 	}
 
@@ -64,8 +64,8 @@ public class BookServiceImpl implements BookService {
 		book.setDescription(bookRequest.getDescription());
 		book.setAuthor(bookRequest.getAuthor());
 		book.setPublicationdate(bookRequest.getPublicationdate());
-		book.setCreatedate(now);
-		book.setUpdatedate(now);
+		/*book.setCreateDate(now);
+		book.setUpdateDate(now);*/
 		bookRepository.save(book);
 	}
 

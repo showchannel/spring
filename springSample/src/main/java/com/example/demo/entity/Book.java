@@ -1,7 +1,6 @@
 package com.example.demo.entity;
 
 import java.io.Serializable;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -47,11 +46,11 @@ public class Book implements Serializable {
 	@Column(name = "publicationdate")
 	private String publicationdate;
 	
-	@Column(name = "createdate")
-	private Date createdate;
+	/*@Column(name = "create_date")
+	private Date createDate;
 	
-	@Column(name = "updatedate")
-	private Date updatedate;
+	@Column(name = "update_date")
+	private Date updateDate;*/
 	
 	@Column(name = "borrowcount")
 	private int borrowcount;
